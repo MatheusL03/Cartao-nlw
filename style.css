@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+}
+
+html,
+body{
+    --black: hsl(240, 6%, 13%);
+    --grey: hsl(240, 9% ,89%);
+
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background: linear-gradient(to right, rgb(48, 46, 46), rgb(110, 103, 103));
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: url(imagens/Mobile.svg);
+    width: 375px;
+    height: 760px;
+}
+
+.content{
+    max-width: 250px;
+    margin-inline: auto;
+    text-align: center;
+
+    color: var(--grey);
+}
+
+.avatar{
+    width: 5rem;
+    margin: 11.5rem 3rem 0;
+
+    position: relative;
+}
+
+.avatar span{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 1;
+}
+
+#foto-matheus{
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% );
+}
+
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    color: var(--grey);
+    text-decoration: none;
+
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 1rem;
+
+    justify-content: center;
+}
+
+p{
+    margin: 5rem 0 2rem -1rem;
+    line-height: 2rem;
+
+    width: 18rem;
+    
+}
+
+ul{
+    margin-top: 3rem;
+
+    display: flex;
+    gap: 1rem;
+
+    list-style: none;
+    padding: 0;
+}
+
